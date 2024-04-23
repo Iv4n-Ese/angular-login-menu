@@ -1,0 +1,108 @@
+<main>
+    <h1 class="visually-hidden">Menú</h1>
+  
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 20%;">
+      
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a routerLink="/usuarios" class="nav-link text-white">
+            <i class="bi-person-check" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Usuarios
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/buscar" class="nav-link text-white">
+            <i class="bi-search" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Consultas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reseteo" class="nav-link text-white">
+            <i class="bi-person-plus-fill" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Reseteo
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reportes" class="nav-link text-white">
+            <i class="bi-folder-plus" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Reportes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/herramientas" class="nav-link text-white active">
+            <i class="bi-wrench-adjustable-circle-fill" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Herramientas
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+        <a routerLink="/dashboard" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://cdn.pixabay.com/photo/2013/01/14/08/40/marguerite-74886_960_720.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>Iván</strong>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+          <li><a class="dropdown-item" routerLink="/dashboard">Opciones</a></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Perfil</a></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Ayuda</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Salir</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex flex-column" style="width: 78%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mainContent">
+                    <h5 class="mt-5 text-center">Herramientas del usuario</h5>
+                    <div class="col-md-10 contentInfo">
+                        <div class="col-md-6">
+                            <form style="margin-left: 18px;">
+                                <div class="form-group">
+                                  <label>Nombre completo</label>
+                                  <input type="text" class="form-control form-control-lg" placeholder="Modificar el nombre completo">
+                                </div>
+                                <div class="form-group">
+                                  <label>Seleccione un Perfil</label>
+                                  <select class="form-control form-control-lg">
+                                    <option>Adminstrador</option>
+                                    <option>SuperUsuario</option>
+                                    <option>Operación</option>
+                                    <option>Monitor</option>
+                                    <option>Coordinador</option>
+                                    <option>Call Center</option>
+                                    <option>Analisis</option>
+                                    <option>Administrador</option>
+                                  </select>
+                                </div>                                
+                                <div class="form-group">
+                                  <label>Descripción del Rol</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Modificar contraseña</label>
+                                    <input type="password" class="form-control form-control-lg" placeholder="Modificación de la contraseña">
+                                </div>
+                                <button class="btn btn-outline-success mt-4 btn-lg mb-2">Guardar</button>
+                              </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="width: 35rem; height: 320px; margin-left: 18px;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Datos de usuario</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Descripción</h6>                                  
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, possimus sunt.
+                                    </p>
+                                    <img src="./assets/img/avatar-1.png" class="card-img-bottom avatar">
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

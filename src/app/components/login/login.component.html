@@ -1,0 +1,43 @@
+<div class="navBar">
+    <div class="row">
+        <div class="col logo">
+            <img src="./assets/img/logo-left.png">
+        </div>
+        <div class="col">
+            Portal básico con login
+        </div>
+        <div class="col logo">
+            <img src="./assets/img/lotus-rigth.png">        
+        </div>
+    </div>
+</div>
+<div class="mainLogin">
+    <div class="col-md-4 boxLogin">
+        <h4 class="text-center">Inicio de Sesión</h4>
+        <div class="col-md-8">
+            <form [formGroup]="loginUsuario" (ngSubmit)="login()">
+                <div class="mb-3">
+                  <label class="form-label">Usuario</label>
+                  <input type="text" class="form-control" formControlName="user">
+                  <div 
+                    *ngIf="loginUsuario.get('user')?.hasError('required') && loginUsuario.get('user')?.touched"
+                    class="form-text text-danger">El campo Usuario es obligatorio</div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" formControlName="password">
+                  <div
+                    *ngIf="loginUsuario.get('password')?.hasError('required') && loginUsuario.get('password')?.touched"
+                    class="form-text text-danger">El campo Contraseña es obligatorio</div>
+                </div>          
+                <button type="submit" class="btn btn-outline-primary btn-lg">Enviar</button>
+                <button routerLink="/register" class="btn btn-outline-secondary btn-lg float-end"> Registrar </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="fooTer buTtom">
+    <div class="col text-center">
+        Angular v20 2024.
+    </div>
+</div>

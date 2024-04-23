@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* global */
+.navBar{
+    background: rgb(3,68,3);
+    background: linear-gradient(90deg, rgb(174, 243, 174) 0%, rgba(46,153,143,1) 50%, rgb(49, 175, 201) 100%); 
+    height: 55px;
+}
+
+.fooTer{
+    background: rgb(3,60,71);
+    background: linear-gradient(90deg, rgba(3,60,71,1) 0%, rgba(46,153,143,1) 50%, rgba(3,68,3,1) 100%);
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+}
+
+.buTtom{
+    bottom: 0;
+}
+
+.mainContent{
+    background: rgb(245, 245, 245);
+    margin: 0 12px;
+}
+
+.contentInfo{
+    display: flex;
+
+}

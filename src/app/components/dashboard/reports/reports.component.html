@@ -1,0 +1,181 @@
+<main>
+    <h1 class="visually-hidden">Sidebars examples</h1>
+  
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 20%;">
+      
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a routerLink="/usuarios" class="nav-link text-white">
+            <i class="bi-person-check" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Usuarios
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/buscar" class="nav-link text-white">
+            <i class="bi-search" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Consultas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reseteo" class="nav-link text-white">
+            <i class="bi-person-plus-fill" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Reseteo
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reportes" class="nav-link text-white active">
+            <i class="bi-folder-plus" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Reportes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/herramientas" class="nav-link text-white">
+            <i class="bi-wrench-adjustable-circle-fill" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Herramientas
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+        <a routerLink="/dashboard" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://cdn.pixabay.com/photo/2013/01/14/08/40/marguerite-74886_960_720.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>Iván</strong>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+          <li><a class="dropdown-item" routerLink="/dashboard">Opciones</a></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Perfil</a></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Ayuda</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Salir</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex flex-column" style="width: 78%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mainContent">
+                    <h5 class="mt-5 text-center">Descarga de Reportes</h5>
+                    <p>
+                        <button class="btn btn-success btn-lg float-end mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-spreadsheet-fill" viewBox="0 0 16 16">
+                                <path d="M6 12v-2h3v2z"/>
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M3 9h10v1h-3v2h3v1h-3v2H9v-2H6v2H5v-2H3v-1h2v-2H3z"/>
+                            </svg>
+                           Descargar 
+                        </button>
+                        
+                    </p>
+                    <table class="mt-4 table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre(s)</th>
+                            <th scope="col">Primer Apellido</th>
+                            <th scope="col">Segundo Apellido</th>
+                            <th scope="col">Perfil</th>
+                            <th scope="col">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>Bird</td>
+                            <td>twitter</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>Bird</td>
+                            <td>twitter</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>Larry the Bird</td>
+                            <td>Bird</td>
+                            <td>twitter</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Larry</td>
+                            <td>Bird</td>
+                            <td>twitter</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                            <td>A</td>
+                            <td>B</td>
+                          </tr>                          
+                        </tbody>
+                      </table>            
+
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

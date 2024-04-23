@@ -1,0 +1,80 @@
+<main>
+    <h1 class="visually-hidden">Sidebars examples</h1>
+  
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 20%;">
+      
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a routerLink="/usuarios" class="nav-link text-white">
+            <i class="bi-person-check" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Usuarios
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/buscar" class="nav-link text-white active">
+            <i class="bi-search" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Consultas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reseteo" class="nav-link text-white">
+            <i class="bi-person-plus-fill" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Reseteo
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reportes" class="nav-link text-white">
+            <i class="bi-folder-plus" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Reportes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/herramientas" class="nav-link text-white">
+            <i class="bi-wrench-adjustable-circle-fill" style="font-size: 1rem; color: rgb(84, 212, 10);"></i>
+            Herramientas
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+        <a routerLink="/dashboard" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://cdn.pixabay.com/photo/2013/01/14/08/40/marguerite-74886_960_720.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>Iván</strong>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+          <li><a class="dropdown-item" routerLink="/dashboard">Opciones</a></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Perfil</a></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Ayuda</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" routerLink="/dashboard">Salir</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex flex-column" style="width: 78%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mainContent">
+                    <h2 class="mt-5 text-center">Busqueda de datos</h2>
+                    <div class="col-md-10 search">
+                      <form>
+                        <input type="text" placeholder="Ingrese lo que desea buscar">
+                        <button class="btn btn-outline-success btn-lg">Buscar</button>
+                      </form>                      
+                    </div>
+                    <div class="col-md-10 search c_Title">                      
+                      <h3>El resultado de la busqueda es ...</h3>
+                    </div>
+                    <div class="col-md-10 search c_Info">
+                      <h4>Información relevante</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore deserunt, corrupti numquam sequi soluta voluptatum eaque atque harum eligendi amet laboriosam.</p>
+                      <button class="btn btn-warning btn-lg">Ver detalle</button>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora, sequi atque odit animi quod quae.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
